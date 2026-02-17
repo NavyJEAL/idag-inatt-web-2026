@@ -36,24 +36,30 @@
     padding: 5rem 0;
   }
   
-  .cloud__content p {
-    font-size: clamp(16rem, 6vw, 32rem);
-  }
-  
   .cloud__time-row {
-    justify-content: space-between;
-    font-family: 'Crimson Text', serif;
-    font-weight: 700;
-    border-bottom: 1px solid var(--black);
+    justify-content: center;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
+    font-size: 20rem;
+  }
+    .cloud__date-row {
+    justify-content: center;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
+    font-size: 20rem;
   }
   
-  .cloud__location-row p {
-    font-family: "Century Gothic", sans-serif;
+  .cloud__location-row p{
+    font-family: "League Spartan", sans-serif;
     font-weight: 400;
-    font-size: clamp(16rem, 4vw, 24rem);
+    font-size: 20rem;
     line-height: 1;
     margin-left: 8rem;
   }
+  
+  .cloud__location-row {
+    justify-content: center;
+  } 
   
 
   @media screen and (max-width: 500px) {

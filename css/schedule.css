@@ -8,6 +8,12 @@
     gap: 64rem;
 }
 
+.schedule-section__columns h3 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 32rem;
+    font-weight: 700;
+}
+
 .schedule-section__event {
     padding-left: 32rem;
 }
@@ -49,9 +55,9 @@
 
 .schedule-section__event-name {
     position: relative;
-    font-family: 'Crimson Text', serif;
-    font-size: 24rem;
-    font-weight: bold;
+    font-family: "League Spartan", sans-serif;
+    font-size: 40rem;
+    font-weight: 700;
 }
 
 .schedule-section__event-name::before {

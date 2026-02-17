@@ -5,9 +5,9 @@
 }
 
 .sponsor-heading {
-    font-family: "Crimson Text", serif;
-    font-size: 56rem;
-    font-weight: 700;
+    font-family:  "Sansita", sans-serif;
+    font-size: 48rem;
+    font-weight: 600;
     color: var(--spring-100);
 }
 
@@ -31,8 +31,8 @@
 }
 
 .sponsor-list h2 {
-    font-family: "Crimson Text", serif;
-    font-size: 32rem;
+    font-family: "League Spartan", sans-serif;
+    font-size: 24rem;
     font-weight: 700;
 }
 
@@ -99,9 +99,9 @@
 .sponsor-link {
     text-decoration: none;
     color: var(--black);
-    font-family: "Crimson Text", serif;
+    font-family: "League Spartan", sans-serif;
     font-size: 24rem;
-    font-weight: 700;
+    font-weight: 600;
     display: flex;
     align-items: center;
     gap: 8rem;
