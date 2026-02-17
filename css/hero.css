@@ -3,20 +3,20 @@
 .title {
   display: flex;
   justify-content: center;
-  font-family: "Crimson Text", serif;
+  font-family: "Sansita", sans-serif;
   font-weight: bold;
-  font-size: min(256rem, 13vw);
+  font-size: 150rem;
 }
 
 .pretitle {
-  font-family: "Crimson Text", serif;
-  font-weight: bold;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
   font-size: 20rem;
 }
 
 .subtitle {
-  font-family: "Crimson Text", serif;
-  font-weight: bold;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
   font-size: 28rem;
 }
 .hero-section {

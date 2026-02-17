@@ -59,15 +59,16 @@ html {
 }
 
 body {
-  font-family: 'Molengo', sans-serif;
-  font-size: 20rem;
+  font-family: "Geologica", serif;
+  font-weight: 300;
+  font-size: 18rem;
   line-height: 1.4;
   background-color: var(--black);
 }
 
 h3 {
-  font-family: "Crimson Text", serif;
-  font-weight: bold;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
   font-size: 48rem;
 }
 
@@ -148,18 +149,16 @@ button:not(.button):hover {
 }
 
 .section-heading {
-  font-family: "Century Gothic", sans-serif;
-  font-weight: 100;
+  font-family: "sansita", sans-serif;
+  font-weight: bold;
   font-size: clamp(42rem, 10vw, 90rem);
-  letter-spacing: 4.8rem;
   margin-bottom: 64rem;
 }
 
 .section-pretitle {
-  font-family: "Century Gothic", sans-serif;
-  font-weight: 100;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
   font-size: 32rem;
-  letter-spacing: 4.8rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -213,7 +212,8 @@ button:not(.button):hover {
 }
 
 .top-row > * > p:first-child {
-  font-family: 'Crimson Text', serif;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 200;
   font-size: 24rem;
 }
 
