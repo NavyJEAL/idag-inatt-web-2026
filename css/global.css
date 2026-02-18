@@ -204,6 +204,7 @@ button:not(.button):hover {
 /* Ingen aning varför men koden fungerar inte utan detta 🤪*/
 .top-row > * {
   flex: 1;
+  height: fit-content;
   display: flex;
   gap: 16rem;
   flex-direction: column;
@@ -224,7 +225,6 @@ button:not(.button):hover {
 @media screen and (min-width: 900px) {
   .top-row {
       flex-direction: row;
-      height: 512rem;
       gap: 0;
   }
 

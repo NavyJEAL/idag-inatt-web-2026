@@ -22,8 +22,8 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    top: 0;
+    justify-content: center;
+    top: 10%;
     bottom: 0;
     width: 100%;
     max-width: 400rem;

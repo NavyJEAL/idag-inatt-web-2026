@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    text-align:center;
     gap: 16rem;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .intro__content p {
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 @media screen and (max-width: 600px) {

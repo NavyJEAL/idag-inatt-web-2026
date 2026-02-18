@@ -6,6 +6,7 @@
   font-family: "Sansita", sans-serif;
   font-weight: bold;
   font-size: 150rem;
+  padding: 120rem 0;
 }
 
 .pretitle {
@@ -22,8 +23,7 @@
 .hero-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  overflow: hidden;
+  justify-content: center;
   min-height: 100vh;
   color: var(--black);
   background-color: var(--spring-50);

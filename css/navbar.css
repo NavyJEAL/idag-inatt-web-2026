@@ -15,7 +15,7 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10rem 24rem;
+    padding: 10rem 24rem;;
     font-size: 16rem;
 }
 
@@ -70,7 +70,7 @@ nav ul li.right {
     height: 100%;
     z-index: 999;
     color: white;
-    padding: 50px 20px;
+    padding: 50px 50px;
     text-align: center;
     overflow-y: auto;
     transition: top 0.3s ease;
