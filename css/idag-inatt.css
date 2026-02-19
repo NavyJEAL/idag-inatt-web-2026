@@ -1,59 +1,63 @@
 .idag-section {
-    background-color: var(--summer-100);
-    overflow: hidden;
-    position: relative;
+  background-color: var(--summer-100);
+  overflow: hidden;
+  position: relative;
 }
 
 .idag-section .feature-list__item:not(:first-child) {
-    border-color: black;
+  border-color: black;
 }
 
 .inatt-section {
-    background-color: var(--autumn-200);
-    color: var(--autumn-100);
-    overflow: hidden;
+  background-color: var(--autumn-200);
+  color: var(--autumn-100);
+  overflow: hidden;
 }
 
 .inatt-section .feature-list__item:not(:first-child) {
-    border-color: var(--autumn-100);
+  border-color: var(--autumn-100);
 }
 
 .inatt-section .button {
-    background-color: var(--autumn-100);
+  background-color: var(--autumn-100);
 }
 
 .inatt-section .button:hover {
-    background-color: var(--autumn-150);
-  }
+  background-color: var(--autumn-150);
+}
 
-  .background-icon {
-    position: absolute;
-    top: -50rem;
-    right: -50rem;
-    z-index: -2;
-    opacity: 0.5;
-  }
+.hidden {
+  display: none;
+}
 
-  .inatt-section .background-icon {
-    top: -100rem;
-    right: -100rem;
-    animation: sway 10s infinite alternate;
-  }
+.background-icon {
+  position: absolute;
+  top: -50rem;
+  right: -50rem;
+  z-index: -2;
+  opacity: 0.5;
+}
 
-  .idag-section .background-icon {
-    top: -100rem;
-    right: -100rem;
-    animation: spin 45s infinite linear;
-  }
+.inatt-section .background-icon {
+  top: -100rem;
+  right: -100rem;
+  animation: sway 10s infinite alternate;
+}
 
-  .cancelled {
-    height: 100%;
-    width: fit-content;
-    background-color: var(--black);
-    color: var(--summer-100);
-    border-color: var(--autumn-200);
-    transform: rotate(-10deg);
-    font-size: 48rem;
-    top: 200rem;
-    left: 400rem;
-  }
+.idag-section .background-icon {
+  top: -100rem;
+  right: -100rem;
+  animation: spin 45s infinite linear;
+}
+
+.cancelled {
+  height: 100%;
+  width: fit-content;
+  background-color: var(--black);
+  color: var(--summer-100);
+  border-color: var(--autumn-200);
+  transform: rotate(-10deg);
+  font-size: 48rem;
+  top: 200rem;
+  left: 400rem;
+}
