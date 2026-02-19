@@ -1,5 +1,5 @@
 .idag-section {
-  background-color: var(--summer-100);
+  background: var(--gradient-idag);
   overflow: hidden;
   position: relative;
 }
@@ -9,7 +9,13 @@
 }
 
 .inatt-section {
-  background-color: var(--autumn-200);
+  background: var(--gradient-inatt);
+  color: var(--autumn-100);
+  overflow: hidden;
+}
+
+.schema-section {
+  background: var(--gradient-inatt);
   color: var(--autumn-100);
   overflow: hidden;
 }

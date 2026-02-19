@@ -19,11 +19,34 @@
   --black: #000000;
   --white: #ffffff;
 
-  --gradient-warm-dark: linear-gradient(
-    180deg,
-    #fae0bf 0%,
-    #5f503e 50%,
-    #1d1511 100%
+    --gradient-hero: radial-gradient(
+    100% 100% at 50% 50%,
+    #332B24 0%,
+    #0C0907 100%
+  );
+
+  --gradient-idag: radial-gradient(
+    100% 100% at 50% 50%,
+    #f5f0e2 0%,
+    #e4d5ac 100%
+  );
+
+  --gradient-inatt: radial-gradient(
+    100% 100% at 50% 50%,
+    #6E0A4E 0%,
+    #3C0129 100%
+  );
+
+    --gradient-schedule: radial-gradient(
+    100% 100% at 50% 50%,
+    #5D071C 0%,
+    #31000C 100%
+  );
+
+    --gradient-team: radial-gradient(
+    100% 100% at 50% 50%,
+    #152D68 0%,
+    #000B25 100%
   );
 
   --gradient-gold: linear-gradient(
@@ -63,7 +86,7 @@ body {
   font-weight: 300;
   font-size: 18rem;
   line-height: 1.4;
-  background-color: var(--black);
+  background: var(--gradient-body);
 }
 
 h3 {

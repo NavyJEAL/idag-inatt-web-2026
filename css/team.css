@@ -1,6 +1,6 @@
 /* ---------- Team ---------- */
 .team-section {
-    background-color: #151515;
+    background: var(--gradient-team);
     color: var(--white);
 }
 

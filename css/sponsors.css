@@ -1,5 +1,5 @@
 .sponsor-section {
-  background-color: var(--spring-200);
+  background: var(--gradient-idag);
   color: var(--white);
   overflow: hidden;
 }

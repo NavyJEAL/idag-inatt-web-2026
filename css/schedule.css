@@ -1,5 +1,5 @@
 .schedule-section {
-    background-color: var(--winter-100);
+    background: var(--gradient-schedule);
 }
 
 .schedule-section__columns {
