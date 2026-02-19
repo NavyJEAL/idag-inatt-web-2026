@@ -1,9 +1,11 @@
 .idag__marquee {
-    background-color: white;
+    background-color: transparent;
+    margin-top: -50rem;
+    margin-bottom: 20rem;
 }
 
 .inatt__marquee {
-    background-color: white;
+    background-color:transparent;
 
 }
 
@@ -19,6 +21,7 @@
     flex-wrap: nowrap;
     animation: marquee 15s linear infinite;
     width: max-content;
+    gap: 100rem;
 }
 
 .marquee__content {
@@ -32,7 +35,7 @@
 }
 
 .marquee__content img {
-    height: 24rem;
+    height: 32rem;
 }
 
 

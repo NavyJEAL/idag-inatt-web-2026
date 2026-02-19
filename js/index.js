@@ -127,13 +127,18 @@ document.addEventListener("scroll", () => {
   sections.forEach((section) => {
     const rect = section.getBoundingClientRect();
     if (rect.top <= 50 && rect.bottom >= 50) {
+      matched = true;
       const backgroundColor = getComputedStyle(section).backgroundColor;
-      navbar.style.backgroundColor = backgroundColor;
 
-      
+      // Skippa om färgen är transparent (rgba(0,0,0,0))
+      if (backgroundColor === "rgba(0, 0, 0, 0)") {
+        navbar.style.backgroundColor = "transparent";
+        return;
+      }
+
+      navbar.style.backgroundColor = backgroundColor;
       const luminance = calculateLuminance(backgroundColor);
 
-      
       if (luminance < 0.5) {
         navbar.style.color = "white";
         const navImages = navbar.querySelectorAll("img");
@@ -146,6 +151,9 @@ document.addEventListener("scroll", () => {
         navImages.forEach((img) => {
           img.style.filter = ""; 
         });
+      }
+      if (!matched) {
+        navbar.style.backgroundColor = "transparent";
       }
     }
   });

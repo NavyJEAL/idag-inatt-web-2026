@@ -15,7 +15,8 @@
   --summer-200: #fad369;
   --winter-50: #caebff;
   --winter-100: #a3dcff;
-  --winter-200: #3eb5ff;
+  --pearl: #857e6c;
+  --footer: #02031C;
   --black: #000000;
   --white: #ffffff;
 
@@ -50,9 +51,11 @@
   );
 
   --gradient-gold: linear-gradient(
-    180deg,
+    90deg,
     #c8870a 0%,
-    #ffbf19 50%,
+    #dba826 25%,
+    #c8870a 50%,
+    #dba826 75%,
     #c8870a 100%
   );
   --gradient-silver: linear-gradient(
@@ -163,12 +166,6 @@ button:not(.button):hover {
   padding: 64rem 0;
   z-index: 0;
   
-}
-
-@media screen and (min-width: 900px) {
-  .section {
-    padding: 128rem 0;
-  }
 }
 
 .section-heading {

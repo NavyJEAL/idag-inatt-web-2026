@@ -1,12 +1,3 @@
-.intro-section {
-    font-size: 32rem;
-    background-color: var(--spring-100);
-    padding: 24rem 0;
-}
-
-.intro-section .container {
-    padding: 10rem;
-}
 
 .intro__content {
     display: grid;
@@ -16,13 +7,11 @@
     gap: 16rem;
 }
 
-.intro__content img {
-    grid-column: span 1;
-    margin: 0 auto;
-}
-
 .intro__content p {
     grid-column: span 3;
+    font-size: 24rem;
+    margin-top: 250rem;
+    color: var(--pearl);
 }
 
 @media screen and (max-width: 600px) {

@@ -1,5 +1,6 @@
 .schedule-section {
     background: var(--gradient-schedule);
+    color: var(--white);
 }
 
 .schedule-section__columns {
@@ -49,7 +50,7 @@
     left: 8rem;
     width: 1rem;
     height: 100%;
-    background-color: var(--black);
+    background-color: var(--white);
     transform: translateX(-50%);
 }
 
@@ -67,7 +68,7 @@
     left: -28rem;
     width: 8rem;
     height: 8rem;
-    background-color: var(--black);
+    background-color: var(--white);
     border-radius: 9999px;
 }
 

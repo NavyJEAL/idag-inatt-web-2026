@@ -25,13 +25,34 @@
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  color: var(--black);
   background: var(--gradient-hero);
+}
+.hero-section h1 {
+  display: inline-block;
+  background: var(--gradient-gold);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+@keyframes shimmer {
+  from { background-position: 0% 50%; }
+  to   { background-position: 200% 50%; }
+}
+
+.hero-section h2 {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-section .container {
   text-align: center;
-  margin-top: 72rem;
+  margin-top: 150rem;
 }
 
 .lower-opacity {
