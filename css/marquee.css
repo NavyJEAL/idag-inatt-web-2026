@@ -19,7 +19,7 @@
 .marquee__inner {
     display: flex;
     flex-wrap: nowrap;
-    animation: marquee 15s linear infinite;
+    animation: marquee 30s linear infinite;
     width: max-content;
     gap: 100rem;
 }

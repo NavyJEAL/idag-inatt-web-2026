@@ -3,8 +3,10 @@ nav {
     top: 0;
     z-index: 1000;
     width: 100%;
+    background: var(--navbar-bg,#1B1410D9);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 .navbar__logo {
   position: absolute;
@@ -56,7 +58,7 @@ nav ul li.right {
     border: none;
     font-size: 24rem;
     line-height: 24rem;
-    z-index: 1000;
+    z-index: 2000;
 }
 
 .fullscreen-menu {
@@ -73,12 +75,22 @@ nav ul li.right {
     padding: 50px 50px;
     text-align: center;
     overflow-y: auto;
-    transition: top 0.3s ease;
+    transition: top 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+}
+
+.fullscreen-menu a {
+  color: white;
+}
+
+.fullscreen-menu img {
+  filter: invert(1);
 }
 
 .fullscreen-menu.active {
     top: 0;
-    transition: top 0.3 ease;
+    transition: top 0.3s ease, visibility 0.3s ease;
+    visibility: visible;
 }
 
 .fullscreen-menu ul {

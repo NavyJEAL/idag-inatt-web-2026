@@ -23,6 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.out",
   });
 
+  // Duplicerar marquee-innehållret så det flyter på snyggt
+  document.querySelectorAll(".marquee__inner").forEach(inner => {
+    inner.innerHTML += inner.innerHTML;
+  });
+});
+
 /* Reveal elements on scroll */
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".reveal");
@@ -50,54 +56,65 @@ function calculateLuminance(color) {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b; 
 }
 
-/* Change nav-bar depending on backgorund-color Using fuction above */
-document.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar");
-  const sections = document.querySelectorAll("section");
-  const navLinks = navbar.querySelectorAll("a");
-  let matched = false;
-  
-  sections.forEach((section) => {
-    const rect = section.getBoundingClientRect();
-    if (rect.top <= navbar.offsetHeight && rect.bottom >= navbar.offsetHeight) {
-      matched = true;
-      const backgroundColor = getComputedStyle(section).backgroundColor;
+/* Hide/show navbar on scroll */
+let lastScrollY = window.scrollY;
 
-      // Skippa om färgen är transparent (rgba(0,0,0,0))
-      if (backgroundColor === "rgba(0, 0, 0, 0)") {
-        navbar.style.backgroundColor = "transparent";
-        return;
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > lastScrollY && currentScrollY > 20) {
+    // Skrollar nedåt = göm navbaren
+    gsap.to(navbar, { y: "-100%", duration: 0.3, ease: "power2.out" });
+  } else {
+    // Skrollar uppåt = visa navbaren
+    gsap.to(navbar, { y: "0%", duration: 0.3, ease: "power2.out" });
+  }
+
+  lastScrollY = currentScrollY;
+});
+
+/* Change nav-bar depending on backgorund-color Using fuction above */
+function updateNavbar() {
+  const navbar = document.querySelector(".navbar");
+  const navLinks = navbar.querySelectorAll(".navbar__links a");
+  const sections = document.querySelectorAll("section");
+
+  let matched = false;
+
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    const navHeight = navbar.offsetHeight;
+
+    if (rect.top <= navHeight && rect.bottom >= navHeight) {
+      matched = true;
+
+      const theme = section.dataset.theme;
+      const bg = section.dataset.navbarBg;
+
+      if (bg) {
+        navbar.style.setProperty("--navbar-bg", bg);
       }
 
-      navbar.style.backgroundColor = backgroundColor;
-      const luminance = calculateLuminance(backgroundColor);
-
-      if (luminance < 0.5) {
+      if (theme === "dark") {
         navbar.style.color = "white";
-        const navImages = navbar.querySelectorAll("img");
-        navLinks.forEach(link => {
-          link.style.color = "white";
-        });
-        navImages.forEach((img) => {
-          img.style.filter = "invert(1)";
-        });
+        navLinks.forEach(a => a.style.color = "white");
+        navbar.querySelectorAll("img").forEach(img => img.style.filter = "invert(1)");
       } else {
-        navbar.style.color = ""; 
-        const navImages = navbar.querySelectorAll("img");
-        navLinks.forEach(link => {
-          link.style.color = "";
-        });
-        navImages.forEach((img) => {
-          img.style.filter = ""; 
-        });
+        navbar.style.color = "";
+        navLinks.forEach(a => a.style.color = "");
+        navbar.querySelectorAll("img").forEach(img => img.style.filter = "");
       }
     }
   });
-  
+
   if (!matched) {
-    navbar.style.backgroundColor = "transparent";
+    navbar.style.color = "";
   }
-});
+}
+
+window.addEventListener("scroll", updateNavbar);
+window.addEventListener("load", updateNavbar);
 
 
 
