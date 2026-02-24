@@ -11,26 +11,26 @@
 
 .inatt-section {
   background: var(--gradient-inatt);
-  color: var(--autumn-100);
+  color: var(--pearl-100);
   overflow: hidden;
 }
 
 .schema-section {
   background: var(--gradient-inatt);
-  color: var(--autumn-100);
+  color: var(--pearl-100);
   overflow: hidden;
 }
 
 .inatt-section .feature-list__item:not(:first-child) {
-  border-color: var(--autumn-100);
+  border-color: var(--pearl-100);
 }
 
 .inatt-section .button {
-  background-color: var(--autumn-100);
+  background-color: var(--pearl-100);
 }
 
 .inatt-section .button:hover {
-  background-color: var(--autumn-150);
+  background: var(--pearl-150);
 }
 
 .hidden {

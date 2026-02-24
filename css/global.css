@@ -15,7 +15,9 @@
   --summer-200: #fad369;
   --winter-50: #caebff;
   --dark-brown: #272019;
-  --pearl: #857e6c;
+  --stone: #857e6c;
+  --pearl-100: #FBF4E1;
+  --pearl-150: #f5e8c8;
   --footer: #02031C;
   --black: #000000;
   --white: #ffffff;
@@ -77,7 +79,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 html {
   font-size: 0.0625rem;

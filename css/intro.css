@@ -11,7 +11,7 @@
     grid-column: span 3;
     font-size: 24rem;
     margin-top: 250rem;
-    color: var(--pearl);
+    color: var(--stone);
 }
 
 @media screen and (max-width: 600px) {

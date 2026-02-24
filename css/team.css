@@ -1,11 +1,16 @@
 /* ---------- Team ---------- */
 .team-section {
     background: var(--gradient-team);
-    color: var(--white);
+    color: var(--pearl-100);
+}
+
+.team-section h3 {
+    color: var(--pearl-100);
+    font-weight: 500 !important;
 }
 
 .team-section .feature-list__item:not(:first-child) {
-    border-color: var(--white);
+    border-color: var(--pearl-100);
 }
     
   .team-section .feature-list__body-column ul {

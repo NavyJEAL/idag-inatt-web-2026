@@ -23,46 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.out",
   });
 
-
-
-  gsap.from(".hero-section .snowflake-icon", {
-    opacity: 0,
-    rotation: 20,
-    scale: 0.5,
-    duration: 5,
-    delay: 0.7,
-    ease: "power3.out",
-  });
-
-  gsap.from(".sun-icon", {
-    opacity: 0,
-    rotation: 20,
-    scale: 0.5,
-    duration: 5,
-    delay: 0.7,
-    ease: "power3.out",
-  });
-
-  gsap.from(".leaf-icon", {
-    opacity: 0,
-    rotation: 20,
-    scale: 0.5,
-    duration: 5,
-    delay: 0.7,
-    ease: "power3.out",
-  });
-
-  gsap.from(".flower-icon", {
-    opacity: 0,
-    rotation: 20,
-    scale: 0.5,
-    duration: 5,
-    delay: 0.7,
-    ease: "power3.out",
-  });
-});
-
-
 /* Reveal elements on scroll */
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".reveal");
@@ -76,35 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { threshold: 0.8 });
 
   elements.forEach((el) => observer.observe(el));
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const sun = document.querySelector(".sun-icon");
-  if (sun) {
-    sun.style.animation = "spin 15s linear infinite";
-  }
-
-  const snowflake = document.querySelector(".snowflake-icon");
-  if (snowflake) {
-    snowflake.style.animation = "slowSpin 30s linear infinite";
-  }
-
-  const leaf = document.querySelector(".leaf-icon");
-  if (leaf) {
-    leaf.style.animation = "sway 2s ease-in-out infinite alternate";
-  }
-
-  const heroflower = document.querySelector(".flower-icon");
-  if (heroflower) {
-    heroflower.style.animation = "flowerSwing 10s ease-in-out infinite alternate";
-  }
-
-  const sponsorflower = document.getElementById("sponsor-flower");
-  if (sponsorflower) {
-    sponsorflower.style.animation = "flowerSwing 10s ease-in-out infinite alternate";
-  }
 });
 
 // Calculate luminance of a color
@@ -123,10 +54,12 @@ function calculateLuminance(color) {
 document.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
   const sections = document.querySelectorAll("section");
-
+  const navLinks = navbar.querySelectorAll("a");
+  let matched = false;
+  
   sections.forEach((section) => {
     const rect = section.getBoundingClientRect();
-    if (rect.top <= 50 && rect.bottom >= 50) {
+    if (rect.top <= navbar.offsetHeight && rect.bottom >= navbar.offsetHeight) {
       matched = true;
       const backgroundColor = getComputedStyle(section).backgroundColor;
 
@@ -142,21 +75,28 @@ document.addEventListener("scroll", () => {
       if (luminance < 0.5) {
         navbar.style.color = "white";
         const navImages = navbar.querySelectorAll("img");
+        navLinks.forEach(link => {
+          link.style.color = "white";
+        });
         navImages.forEach((img) => {
           img.style.filter = "invert(1)";
         });
       } else {
         navbar.style.color = ""; 
         const navImages = navbar.querySelectorAll("img");
+        navLinks.forEach(link => {
+          link.style.color = "";
+        });
         navImages.forEach((img) => {
           img.style.filter = ""; 
         });
       }
-      if (!matched) {
-        navbar.style.backgroundColor = "transparent";
-      }
     }
   });
+  
+  if (!matched) {
+    navbar.style.backgroundColor = "transparent";
+  }
 });
 
 
