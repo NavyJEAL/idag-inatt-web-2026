@@ -1,26 +1,13 @@
 /* ---------- Variables ---------- */
 
 :root {
-  --autumn-50: #ffd3b7;
-  --autumn-100: #ffbf97;
-  --autumn-150: #fcceb0;
-  --autumn-200: #561f08;
-  --spring-50: #E4FFCF;
-  --spring-100: #c6f8a1;
-  --spring-200: #7da156;
-  --spring-300: #577b30;
-  --summer-50: #ffecb8;
-  --summer-100: #ffdd81;
-  --summer-150: #fce196;
-  --summer-200: #fad369;
-  --winter-50: #caebff;
   --dark-brown: #272019;
   --stone: #857e6c;
   --pearl-100: #FBF4E1;
   --pearl-150: #f5e8c8;
   --footer: #02031C;
   --black: #000000;
-  --white: #ffffff;
+  --white: #FFF0DF;
 
     --gradient-hero: radial-gradient(
     100% 100% at 50% 50%,
@@ -119,20 +106,22 @@ button:not(.button):hover {
 }
 
 .button {
-  background-color: var(--summer-200);
+  background-color: currentColor;
   color: var(--black);
   width: fit-content;
   display: flex;
   align-items: center;
   gap: 8rem;
-  padding: 24rem;
+  margin-top: 20rem;
+  padding: 10rem 20rem;
   border-radius: 8rem;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
 }
 
 .button:hover {
-  background-color: var(--summer-150);
+  background-color: currentColor;
+  color: var(--black);
 }
 
 .button__text {

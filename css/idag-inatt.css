@@ -26,17 +26,16 @@
 }
 
 .inatt-section .button {
-  background-color: var(--pearl-100);
+  background-color: var(--white);
 }
 
 .inatt-section .button:hover {
-  background: var(--pearl-150);
+  background: #d1c6b9;
 }
 
 .hidden {
   display: none;
 }
-
 
 .inatt-section .background-icon {
   top: -100rem;
@@ -50,14 +49,3 @@
   animation: spin 45s infinite linear;
 }
 
-.cancelled {
-  height: 100%;
-  width: fit-content;
-  background-color: var(--black);
-  color: var(--summer-100);
-  border-color: var(--autumn-200);
-  transform: rotate(-10deg);
-  font-size: 48rem;
-  top: 200rem;
-  left: 400rem;
-}
