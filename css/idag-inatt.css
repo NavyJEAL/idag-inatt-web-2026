@@ -2,6 +2,7 @@
   background: var(--gradient-idag);
   overflow: hidden;
   position: relative;
+  color: var(--dark-brown);
 }
 
 .idag-section .feature-list__item:not(:first-child) {
@@ -36,13 +37,6 @@
   display: none;
 }
 
-.background-icon {
-  position: absolute;
-  top: -50rem;
-  right: -50rem;
-  z-index: -2;
-  opacity: 0.5;
-}
 
 .inatt-section .background-icon {
   top: -100rem;

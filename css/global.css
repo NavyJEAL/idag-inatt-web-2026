@@ -14,7 +14,7 @@
   --summer-150: #fce196;
   --summer-200: #fad369;
   --winter-50: #caebff;
-  --winter-100: #a3dcff;
+  --dark-brown: #272019;
   --pearl: #857e6c;
   --footer: #02031C;
   --black: #000000;
@@ -234,8 +234,14 @@ button:not(.button):hover {
 
 .top-row > * > p:first-child {
   font-family: "League Spartan", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 24rem;
+}
+
+.top-row > * > p {
+  font-size: 24rem;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
 }
 
 .feature-list__body > :not(:last-child) {

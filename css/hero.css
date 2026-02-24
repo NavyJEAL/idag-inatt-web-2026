@@ -86,25 +86,3 @@
     height: 96rem;
   }
 }
-
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-@keyframes slowSpin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-@keyframes sway {
-    0% { transform: rotate(-10deg); }
-    100% { transform: rotate(10deg); }
-}
-
-@keyframes flowerSwing {
-    0% { transform: rotate(-5deg) translateY(0px); }
-    50% { transform: rotate(5deg) translateY(-3px); }
-    100% { transform: rotate(-5deg) translateY(0px); }
-}
