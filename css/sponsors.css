@@ -2,6 +2,7 @@
   background: var(--gradient-idag);
   color: var(--black);
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .sponsor-heading {

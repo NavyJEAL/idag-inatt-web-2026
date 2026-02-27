@@ -10,7 +10,7 @@
 .intro__content p {
     grid-column: span 3;
     font-size: 24rem;
-    margin-top: 250rem;
+    margin-top: 120rem;
     color: var(--stone);
 }
 

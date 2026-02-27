@@ -20,6 +20,7 @@
   font-weight: 500;
   font-size: 28rem;
 }
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -29,7 +30,6 @@
 }
   
 
-  
 .hero-section h1 {
   display: inline-block;
   background: var(--gradient-gold);
@@ -41,11 +41,6 @@
   animation: shimmer 6s linear infinite;
 }
 
-@keyframes shimmer {
-  from { background-position: 0% 50%; }
-  to   { background-position: 200% 50%; }
-}
-
 .hero-section h2 {
   background: var(--gradient-gold);
   -webkit-background-clip: text;
@@ -55,7 +50,14 @@
 
 .hero-section .container {
   text-align: center;
-  margin-top: 150rem;
+  margin-top: 40rem;
+}
+
+.hero-section img.hero-logo {
+  width: 80%;
+  max-width: 60vw;
+  height: auto;
+  margin-top: 20rem;
 }
 
 .lower-opacity {
@@ -88,4 +90,34 @@
   .hero__icons-container img {
     height: 96rem;
   }
+}
+
+/* Lampeffekt för cirklarna i hero-logon */
+@keyframes bulb-glow {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 4px #fff8e1) drop-shadow(0 0 8px #ffed87);
+  }
+  50% {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 1px #fff8e1);
+  }
+}
+
+.hero-logo svg circle {
+  fill: #fcf4dc;
+  animation: bulb-glow 4s ease-in-out infinite;
+}
+
+.hero-logo svg {
+  overflow: visible;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.hero-logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }

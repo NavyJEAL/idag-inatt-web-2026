@@ -1,32 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
-  gsap.from(".pretitle", {
-    opacity: 0,
-    y: 50,
-    duration: 3,
-    ease: "power3.out",
-  });
-
-  gsap.from(".title", {
-    opacity: 0,
-    scale: 0.8,
-    duration: 3,
-    delay: 1,
-    ease: "power3.out",
-  });
-
-  gsap.from(".subtitle", {
-    opacity: 0,
-    y: 25,
-    duration: 3,
-    delay: 1.5,
-    ease: "power3.out",
-  });
-
   // Duplicerar marquee-innehållret så det flyter på snyggt
   document.querySelectorAll(".marquee__inner").forEach(inner => {
     inner.innerHTML += inner.innerHTML;
   });
+
+  fetch('img/hollywood-sign.svg')
+  .then(res => res.text())
+  .then(svgText => {
+    const heroLogo = document.querySelector('.hero-logo');
+    heroLogo.innerHTML = svgText;
+
+    const circles = heroLogo.querySelectorAll('circle');
+    console.log('Hittade cirklar:', circles.length); // Ska vara > 0
+
+    circles.forEach((circle, i) => {
+      circle.style.animation = `bulb-glow 4s ease-in-out infinite`;
+      circle.style.animationDelay = `${(i * 0.08) % 2.5}s`;
+    });
+  });
+
 });
 
 /* Reveal elements on scroll */

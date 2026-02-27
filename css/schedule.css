@@ -1,7 +1,7 @@
 .schedule-section {
     background: var(--gradient-schedule);
     color: var(--white);
-      min-height: 100vh;
+    min-height: 100vh;
 }
 
 .schedule-section__columns {

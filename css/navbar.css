@@ -58,7 +58,7 @@ nav ul li.right {
     border: none;
     font-size: 24rem;
     line-height: 24rem;
-    z-index: 2000;
+    z-index: 1002;
 }
 
 .fullscreen-menu {
@@ -70,7 +70,7 @@ nav ul li.right {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.9);
     height: 100%;
-    z-index: 999;
+    z-index: 1001;
     color: white;
     padding: 50px 50px;
     text-align: center;
